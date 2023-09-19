@@ -48,7 +48,7 @@ export default function Header() {
                         {
                             links.map(({ name, path }, index) => {
                                 return (
-                                    <li style={{display: hamburgerOpen ? '' : 'none', transition: hamburgerOpen ? '.3s' : '.3s'}} key={index}>
+                                    <li style={{ transition: hamburgerOpen ? '.8s' : '.8s', transitionDelay: hamburgerOpen ? '.8s' : '', transform: hamburgerOpen ? 'translateX(0vw)' : 'translateX(-150vw)' }} key={index}>
                                         <Link href={path}>{name}</Link>
                                     </li>
                                 )
